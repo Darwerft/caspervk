@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+}
+
+#footer{
+    text-align: center;
+    font-size: 8px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+#goodRecordBackgroundProgressBar {
+    transition: width 5s linear;
+    transition-property: width;
+    
+    -webkit-transition: width 5s linear;
+    -webkit-transition-property: width;
+}
+
+#goodmillingNoiseButtonProgressBar {
+    transition: width 15s linear;
+    transition-property: width;
+    
+    -webkit-transition: width 15s linear;
+    -webkit-transition-property: width;
+}
