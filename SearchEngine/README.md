@@ -4,7 +4,7 @@
 School project. A simple search engine that crawls the web, processes the pages, and adds them to a database.
 The pages are stored in a ElasticSearch database, which provides fulltext search capabilities.
 
-Whenever the crawler crawls a website, all the links (<a> tags) on the page are added to the queue, when the crawler is done it will fetch the next website in the queue.
+Whenever the crawler crawls a website, all the links (&lt;a&gt; tags) on the page are added to the queue, when the crawler is done it will fetch the next website in the queue.
 It is also possible to request your own page to be added to the index on the site, pages added to the queue this way has higher priority in the queue.
 
 ##Requirements:
