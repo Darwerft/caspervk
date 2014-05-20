@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Search the internet!">
+        <title>Search Engine</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="http://search.caspervk.com/favicon.ico"/>
+        
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        
+        <!-- Javascript Libraries -->
+        <script src="lib/jquery-2.1.0.min.js"></script>
+        <script src="lib/bootstrap.min.js"></script>
+         
+        <!-- Javascript -->
+        <script src="js/main.js"></script>
+    </head>
+    
+    <body>      
+        <!-- *** ### MAIN PAGE ### *** -->
+        <div id="mainPage">
+            <!-- AddYourSite button -->
+            <button type="button" id="addYourSite-openButton" data-target="#addYourSite-modal" data-toggle="modal" class="btn btn-default">Add your site</button>
+            <!-- Container for Logo and Search bar -->
+            <div id="searchBarContainer">
+                <!-- Logo -->
+                <img id ="logo" src="img/Logo_LQ.png" alt=""> 
+                <!-- Search Bar -->
+                <div class="input-group input-group-lg" id="searchBar">
+                    <input type="text" class="form-control" id="searchInput" autofocus autocomplete="off" placeholder="Search the internet..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-lg btn-primary" type="button" id="searchButton">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- AddYourSite modal -->
+            <div class="modal fade" id="addYourSite-modal" tabindex="-1" role="dialog" aria-labelledby="addYourSite-modal-label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Add Your Site</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Did we miss your website? Sorry, input it, and we'll add it!</p>
+                            <input class="form-control" id="addYourSite-input" placeholder="http://www.example.com"></input>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="addYourSite-goButton" class="btn btn-primary" data-dismiss="modal">Add my site!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- *** ### RESULTS PAGE ### *** -->
+        <div id="resultsPage">
+            <!-- NavBar -->
+            <div id="resultsPage_navBar">
+                 <a href="#"><img src="img/Logo_Search.png" id="resultsPage_navBar_logo"></a>
+            </div>
+            
+            <!-- Page -->
+            <div id="resultsPage_content">
+                <div class="input-group input-group-lg" id="resultsPage_searchBar">
+                    <input type="text" class="form-control" id="resultsPage_searchInput" autocomplete="off" placeholder="Search the internet..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-lg btn-primary" type="button" id="resultsPage_searchButton">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+                <p id="resultsPage_stats"> </p>
+                <!-- Results -->
+                <div id="resultsPage_results">
+                </div>
+                
+                <!-- FreeBase -->
+                <div class="panel panel-default" id="resultsPage_freebase">
+                    <div class="panel-body">
+                        <h2 id="freebase_title"></h2>
+                        <p id="freebase_text"></p>
+                        <a id="freebase_source" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body
+ </html>

@@ -1,0 +1,18 @@
+﻿body, html {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    margin: 0px 2%;
+}
+
+#map-canvas {
+    height: 70vh;
+}
+
+.ptags-afstande-options {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
