@@ -1,4 +1,4 @@
 caspervk
 ========
 
-For personal projects etc.
+For personal projects, school projects, etc.
